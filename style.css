@@ -144,3 +144,8 @@ button {
     font-size: 1.3em;
     font-weight: 500;
 }
+
+.small-dashboard-icon {
+    width: 20px;
+    height: 20px;
+}
