@@ -1,6 +1,5 @@
-This project is THe Odin Project Dashboard. This project primary focus to help me to 
+This project is part of The Odin Project dashboard project. This project's primary focus to help me
 practice using CSS Grid. I want to continue practicing making responsive layouts with 
-more complicated design. 
-This project will use HTML and CSS, and while my main goal is to focus on practice using
-grid, I will use flexbox if and when I feel it's better suited.
+more complicated design, and integrating Grid and Flexbox to achieve any desired layout. 
+This project will utilize HTML and CSS.
 # top-dashboard
