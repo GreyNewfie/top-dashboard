@@ -131,7 +131,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 45px;
 }
 
 .dashboard-title {
@@ -145,7 +145,30 @@ button {
     font-weight: 500;
 }
 
+.dashboard-nav-items,
+.dashboard-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    align-content: center;
+    gap: 15px;
+}
+
 .small-dashboard-icon {
     width: 20px;
     height: 20px;
+}
+
+.dashboard-nav-items>div,
+.dashboard-options>div {
+    display: flex;
+    gap: 15px;
+}
+
+.dashboard-nav-items button,
+.dashboard-options button {
+    border: none;
+    background-color: var(--dashboard-bg-color);
+    color: white;
+    font-size: 1rem;
 }
