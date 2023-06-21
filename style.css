@@ -228,3 +228,9 @@ button {
     justify-content: flex-end;
     gap: 15px;
 }
+
+.content-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
