@@ -200,8 +200,7 @@ button:hover {
     padding-right: 25px;
 }
 
-#my-projects-title,
-#announcements-title {
+.content-title {
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -244,26 +243,33 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    max-height: 668px;
 }
 
-.announcements-container {
+.announcements-container,
+.trending-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content max-content;
+    grid-template-rows: min-content 1fr;
 }
 
-.announcements {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 35px 1fr 35px 1fr;
+.announcements,
+.trending-items {
     background-color: white;
     padding: 30px 25px;
     border-radius: 10px;
     box-shadow: 5px 5px 2px var(--box-shadow-color);
 }
 
+.announcements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 35px 1fr 35px 1fr;
+}
+
 .announcements>div {
-    /* align-self: center; */
+    align-self: center;
 }
 
 .announcements p {
@@ -277,8 +283,23 @@ button:hover {
     border-top: 1px solid var(--content-bg-color);
 }
 
-.trending-container {
+.trending-items {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, max-content);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trending-items>div {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 10px;
+    align-items: center;
+}
+
+.trending-items p {
+    font-size: .8em;
+}
+
+.trending-items p:nth-of-type(2n) {
+    color: var(--content-text-color);
 }
